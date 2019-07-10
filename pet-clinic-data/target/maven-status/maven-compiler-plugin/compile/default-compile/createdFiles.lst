@@ -1,5 +1,8 @@
+com/jcarbad/sfgpetclinic/services/PetService.class
 com/jcarbad/sfgpetclinic/model/Vet.class
-com/jcarbad/sfgpetclinic/model/PetType.class
+com/jcarbad/sfgpetclinic/services/VetService.class
 com/jcarbad/sfgpetclinic/model/Person.class
+com/jcarbad/sfgpetclinic/model/PetType.class
+com/jcarbad/sfgpetclinic/services/OwnerService.class
 com/jcarbad/sfgpetclinic/model/Owner.class
 com/jcarbad/sfgpetclinic/model/Pet.class
