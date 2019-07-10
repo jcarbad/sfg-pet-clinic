@@ -6,3 +6,4 @@ com/jcarbad/sfgpetclinic/model/PetType.class
 com/jcarbad/sfgpetclinic/services/OwnerService.class
 com/jcarbad/sfgpetclinic/model/Owner.class
 com/jcarbad/sfgpetclinic/model/Pet.class
+com/jcarbad/sfgpetclinic/model/BaseEntity.class
