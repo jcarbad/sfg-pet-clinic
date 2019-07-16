@@ -1,2 +1,3 @@
 com/jcarbad/sfgpetclinic/SfgPetClinicApplication.class
+com/jcarbad/sfgpetclinic/controllers/VetController.class
 com/jcarbad/sfgpetclinic/controllers/IndexController.class
