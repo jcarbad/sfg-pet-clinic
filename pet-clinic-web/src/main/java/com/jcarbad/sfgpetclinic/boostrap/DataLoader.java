@@ -27,18 +27,18 @@ public class DataLoader implements CommandLineRunner {
 
         Owner o2 = new Owner();
         o2.setId(2L);
-        o2.setFirstName("Amigdala");
-        o2.setLastName("Winston");
+        o2.setFirstName("Rachel");
+        o2.setLastName("Basulto");
 
         Vet v1 = new Vet();
         v1.setId(3L);
-        v1.setFirstName("VET 1");
-        v1.setLastName("Vetty");
+        v1.setFirstName("L'Amiga");
+        v1.setLastName("De Rache");
 
         Vet v2 = new Vet();
         v2.setId(4L);
-        v2.setFirstName("VET 2");
-        v2.setLastName("Vetty");
+        v2.setFirstName("Doctor");
+        v2.setLastName("Jimmy");
 
         System.out.println("Loading owners...");
         ownerService.save(o1);
