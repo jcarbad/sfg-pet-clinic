@@ -5,10 +5,12 @@ com/jcarbad/sfgpetclinic/model/PetType.class
 com/jcarbad/sfgpetclinic/services/map/AbstractMapService.class
 com/jcarbad/sfgpetclinic/services/map/PetServiceMap.class
 com/jcarbad/sfgpetclinic/model/Pet.class
+com/jcarbad/sfgpetclinic/model/Visit.class
 com/jcarbad/sfgpetclinic/services/PetService.class
 com/jcarbad/sfgpetclinic/model/Vet.class
 com/jcarbad/sfgpetclinic/services/map/OwnerServiceMap.class
 com/jcarbad/sfgpetclinic/services/CrudService.class
 com/jcarbad/sfgpetclinic/services/OwnerService.class
+com/jcarbad/sfgpetclinic/model/Specialty.class
 com/jcarbad/sfgpetclinic/model/Owner.class
 com/jcarbad/sfgpetclinic/model/BaseEntity.class
