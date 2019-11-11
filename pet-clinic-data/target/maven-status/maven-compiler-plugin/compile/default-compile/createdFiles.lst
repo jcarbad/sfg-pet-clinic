@@ -17,6 +17,7 @@ com/jcarbad/sfgpetclinic/services/VisitService.class
 com/jcarbad/sfgpetclinic/repositories/OwnerRepository.class
 com/jcarbad/sfgpetclinic/services/map/VetServiceMap.class
 com/jcarbad/sfgpetclinic/repositories/PetTypeRepository.class
+com/jcarbad/sfgpetclinic/services/datajpa/VetJpaService.class
 com/jcarbad/sfgpetclinic/model/PetType.class
 com/jcarbad/sfgpetclinic/services/map/AbstractMapService.class
 com/jcarbad/sfgpetclinic/services/map/PetServiceMap.class
