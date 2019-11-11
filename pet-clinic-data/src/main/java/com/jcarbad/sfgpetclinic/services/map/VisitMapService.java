@@ -25,6 +25,7 @@ public class VisitMapService extends AbstractMapService<Visit, Long> implements 
 
     @Override
     public Visit save(Visit object) {
+        // May add validations of nullity before saving
         return super.save(object);
     }
 
