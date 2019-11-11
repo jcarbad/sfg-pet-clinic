@@ -59,6 +59,11 @@ public class DataLoader implements CommandLineRunner {
         o2.setFirstName("Rachel");
         o2.setLastName("Basulto");
 
+        System.out.println("Loading owners...");
+        ownerService.save(o1);
+        ownerService.save(o2);
+        System.out.println("Done.");
+
         Pet coqui = new Pet();
         coqui.setName("Coqui");
         coqui.setOwner(o2);
@@ -94,10 +99,6 @@ public class DataLoader implements CommandLineRunner {
         kiarasVisit.setDescription("La visita de Kiara");
 
 
-        System.out.println("Loading owners...");
-        ownerService.save(o1);
-        ownerService.save(o2);
-        System.out.println("Done.");
 
         System.out.println("Loading vets...");
         vetService.save(v1);
