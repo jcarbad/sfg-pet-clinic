@@ -8,6 +8,7 @@ com/jcarbad/sfgpetclinic/services/PetService.class
 com/jcarbad/sfgpetclinic/model/Vet.class
 com/jcarbad/sfgpetclinic/services/map/OwnerServiceMap.class
 com/jcarbad/sfgpetclinic/services/CrudService.class
+com/jcarbad/sfgpetclinic/services/datajpa/SpecialtyJpaService.class
 com/jcarbad/sfgpetclinic/services/map/SpecialtyMapService.class
 com/jcarbad/sfgpetclinic/services/OwnerService.class
 com/jcarbad/sfgpetclinic/model/Owner.class
