@@ -1,5 +1,6 @@
 com/jcarbad/sfgpetclinic/services/map/PetTypeMapService.class
 com/jcarbad/sfgpetclinic/model/Person.class
+com/jcarbad/sfgpetclinic/services/datajpa/PetTypeJpaService.class
 com/jcarbad/sfgpetclinic/repositories/SpecialtyRepository.class
 com/jcarbad/sfgpetclinic/model/Pet.class
 com/jcarbad/sfgpetclinic/model/Visit.class

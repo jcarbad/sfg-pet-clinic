@@ -14,6 +14,7 @@
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/repositories/VetRepository.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/model/BaseEntity.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/services/PetService.java
+/Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/services/datajpa/PetTypeJpaService.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/services/map/PetServiceMap.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/repositories/OwnerRepository.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/model/Specialty.java
