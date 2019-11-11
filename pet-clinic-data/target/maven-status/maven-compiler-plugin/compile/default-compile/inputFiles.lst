@@ -1,4 +1,5 @@
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/services/map/PetServiceMap.java
+/Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/repositories/OwnerRepository.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/model/Specialty.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/services/VetService.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/model/Pet.java
@@ -7,10 +8,15 @@
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/model/Vet.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/model/Visit.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/services/map/VetServiceMap.java
+/Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/repositories/SpecialtyRepository.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/model/Owner.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/services/map/AbstractMapService.java
+/Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/repositories/PetTypeRepository.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/model/Person.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/services/OwnerService.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/services/CrudService.java
+/Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/repositories/VisitRepository.java
+/Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/repositories/VetRepository.java
+/Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/repositories/PetRepository.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/model/BaseEntity.java
 /Users/armando/Documents/projects/personal/sfg-pet-clinic/pet-clinic-data/src/main/java/com/jcarbad/sfgpetclinic/services/PetService.java
