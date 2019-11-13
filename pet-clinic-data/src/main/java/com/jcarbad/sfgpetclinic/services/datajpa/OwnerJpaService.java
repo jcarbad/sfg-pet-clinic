@@ -2,7 +2,6 @@ package com.jcarbad.sfgpetclinic.services.datajpa;
 
 import com.jcarbad.sfgpetclinic.model.Owner;
 import com.jcarbad.sfgpetclinic.repositories.OwnerRepository;
-import com.jcarbad.sfgpetclinic.repositories.PetTypeRepository;
 import com.jcarbad.sfgpetclinic.services.OwnerService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;

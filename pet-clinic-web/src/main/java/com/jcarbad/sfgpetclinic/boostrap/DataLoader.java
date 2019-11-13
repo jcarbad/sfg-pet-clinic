@@ -31,73 +31,75 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        PetType dog = new PetType();
-        dog.setName("Dog");
-        PetType savedDogPetType = petTypeService.save(dog);
 
-        PetType cat = new PetType();
-        cat.setName("Cat");
-        PetType savedCatPetType = petTypeService.save(cat);
+        PetType savedDogPetType = petTypeService.save(PetType.builder().name("Dog").build());
 
-        Specialty radiology = new Specialty();
-        radiology.setDescription("Radiology");
-        Specialty savedRadiology = specialtyService.save(radiology);
+        PetType savedCatPetType = petTypeService.save(PetType.builder().name("Cat").build());
 
-        Specialty surgery = new Specialty();
-        surgery.setDescription("Surgery");
-        Specialty savedSurgery = specialtyService.save(surgery);
+        Specialty savedRadiology = specialtyService.save(Specialty.builder().description("Radiology").build());
 
-        Specialty dentistry = new Specialty();
-        dentistry.setDescription("dentistry");
-        Specialty savedDentistry = specialtyService.save(dentistry);
+        Specialty savedSurgery = specialtyService.save(Specialty.builder().description("Surgery").build());
 
-        Owner o1 = new Owner();
-        o1.setFirstName("Armando");
-        o1.setLastName("Carballo");
+        Specialty savedDentistry = specialtyService.save(Specialty.builder().description("Dentistry").build());
 
-        Owner o2 = new Owner();
-        o2.setFirstName("Rachel");
-        o2.setLastName("Basulto");
+        Owner o1 = Owner.builder()
+                .firstName("Armando")
+                .lastName("Carballo")
+                .pets(new HashSet<>())
+                .build();
+
+        Owner o2 = Owner.builder()
+                .firstName("Rachel")
+                .lastName("Basulto")
+                .pets(new HashSet<>())
+                .build();
 
         System.out.println("Loading owners...");
         ownerService.save(o1);
         ownerService.save(o2);
         System.out.println("Done.");
 
-        Pet coqui = new Pet();
-        coqui.setName("Coqui");
-        coqui.setOwner(o2);
-        coqui.setBirthDate(LocalDate.now());
-        coqui.setPetType(savedDogPetType);
+        Pet coqui = Pet.builder()
+                .name("Coqui")
+                .owner(o2)
+                .birthDate(LocalDate.now())
+                .petType(savedDogPetType)
+                .build();
+
         o1.getPets().add(coqui);
 
-        Pet kiara = new Pet();
-        kiara.setName("Kiara");
-        kiara.setOwner(o2);
-        kiara.setBirthDate(LocalDate.now());
-        kiara.setPetType(savedCatPetType);
+        Pet kiara = Pet.builder()
+                .name("Kiara")
+                .owner(o2)
+                .birthDate(LocalDate.now())
+                .petType(savedCatPetType)
+                .build();
+
         o2.getPets().add(kiara);
 
-        Vet v1 = new Vet();
-        v1.setFirstName("L'Amiga");
-        v1.setLastName("De Rache");
-        v1.setSpecialties(new HashSet<>(Arrays.asList(savedRadiology, savedSurgery)));
+        Vet v1 = Vet.builder()
+                .firstName("L'Amiga")
+                .lastName("De Rache")
+                .specialties(new HashSet<>(Arrays.asList(savedRadiology, savedSurgery)))
+                .build();
 
-        Vet v2 = new Vet();
-        v2.setFirstName("Doctor");
-        v2.setLastName("Jimmy");
-        v1.setSpecialties(new HashSet<>(Arrays.asList(savedRadiology, savedDentistry)));
+        Vet v2 = Vet.builder()
+                .firstName("Doctor")
+                .lastName("Jimmy")
+                .specialties(new HashSet<>(Arrays.asList(savedRadiology, savedDentistry)))
+                .build();
 
-        Visit coquisVisit = new Visit();
-        coquisVisit.setPet(coqui);
-        coquisVisit.setDate(LocalDate.now());
-        coquisVisit.setDescription("La visita de Coqui");
+        Visit coquisVisit = Visit.builder()
+                .pet(coqui)
+                .date(LocalDate.now())
+                .description("La visita de Coqui")
+                .build();
 
-        Visit kiarasVisit = new Visit();
-        kiarasVisit.setPet(kiara);
-        kiarasVisit.setDate(LocalDate.now());
-        kiarasVisit.setDescription("La visita de Kiara");
-
+        Visit kiarasVisit = Visit.builder()
+                .pet(kiara)
+                .date(LocalDate.now())
+                .description("La visita de Kiara")
+                .build();
 
 
         System.out.println("Loading vets...");

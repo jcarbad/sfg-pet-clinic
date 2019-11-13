@@ -1,8 +1,12 @@
 com/jcarbad/sfgpetclinic/services/map/PetTypeMapService.class
 com/jcarbad/sfgpetclinic/model/Person.class
+com/jcarbad/sfgpetclinic/model/Specialty$SpecialtyBuilder.class
+com/jcarbad/sfgpetclinic/model/Owner$OwnerBuilder.class
 com/jcarbad/sfgpetclinic/services/datajpa/PetTypeJpaService.class
+com/jcarbad/sfgpetclinic/model/Visit$VisitBuilder.class
 com/jcarbad/sfgpetclinic/repositories/SpecialtyRepository.class
 com/jcarbad/sfgpetclinic/model/Pet.class
+com/jcarbad/sfgpetclinic/model/PetType$PetTypeBuilder.class
 com/jcarbad/sfgpetclinic/model/Visit.class
 com/jcarbad/sfgpetclinic/services/PetService.class
 com/jcarbad/sfgpetclinic/model/Vet.class
@@ -10,6 +14,7 @@ com/jcarbad/sfgpetclinic/services/map/OwnerServiceMap.class
 com/jcarbad/sfgpetclinic/services/CrudService.class
 com/jcarbad/sfgpetclinic/services/datajpa/SpecialtyJpaService.class
 com/jcarbad/sfgpetclinic/services/map/SpecialtyMapService.class
+com/jcarbad/sfgpetclinic/model/Pet$PetBuilder.class
 com/jcarbad/sfgpetclinic/services/OwnerService.class
 com/jcarbad/sfgpetclinic/model/Owner.class
 com/jcarbad/sfgpetclinic/model/BaseEntity.class
@@ -28,6 +33,7 @@ com/jcarbad/sfgpetclinic/services/map/VisitMapService.class
 com/jcarbad/sfgpetclinic/services/datajpa/PetJpaService.class
 com/jcarbad/sfgpetclinic/repositories/VisitRepository.class
 com/jcarbad/sfgpetclinic/repositories/VetRepository.class
+com/jcarbad/sfgpetclinic/model/Vet$VetBuilder.class
 com/jcarbad/sfgpetclinic/services/PetTypeService.class
 com/jcarbad/sfgpetclinic/services/datajpa/OwnerJpaService.class
 com/jcarbad/sfgpetclinic/repositories/PetRepository.class
