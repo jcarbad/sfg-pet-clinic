@@ -1,10 +1,5 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: 3.6.2-jdk-8
-        auth:
-          username: $DOCKER_HUB_USER
-          password: $DOCKER_HUB_PASSWORD
     steps:
       - run: mvn package
