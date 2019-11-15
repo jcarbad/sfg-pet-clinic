@@ -1,0 +1,7 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: 3.6.2-jdk-8
+    steps:
+      run: mvn package
