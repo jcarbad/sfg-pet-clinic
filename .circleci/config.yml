@@ -5,3 +5,6 @@ jobs:
       - image: 3.6.2-jdk-8
     steps:
       - run: mvn package
+      auth:
+        user: $DOCKER_HUB_USER
+        password: $DOCKER_HUB_PASSWORD
