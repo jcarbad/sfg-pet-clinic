@@ -2,6 +2,18 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/openjdk:8-jdk-stretch
+      - image: circleci/openjdk:8-jdk-stretch # ...with this image as the primary container; this is where all `steps` will run
     steps:
+      - checkout
+      - restore_cache:
+          key: sfg-pet-clinic-{{ checksum "pom.xml" }}
+      - run: mvn dependency:go-offline
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: sfg-pet-clinic-{{ checksum "pom.xml" }}
       - run: mvn package
+      - store_test_results:
+          path: target/surefire-reports
+      - store_artifacts:
+          path: target/sfg-pet-clinic-0.0.1-SNAPSHOT.jar
