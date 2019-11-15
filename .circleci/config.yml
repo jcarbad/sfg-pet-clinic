@@ -4,4 +4,4 @@ jobs:
     docker:
       - image: 3.6.2-jdk-8
     steps:
-      run: mvn package
+      - run: mvn package
