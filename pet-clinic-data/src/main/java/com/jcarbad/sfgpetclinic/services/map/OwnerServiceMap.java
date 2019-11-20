@@ -2,6 +2,8 @@ package com.jcarbad.sfgpetclinic.services.map;
 
 import com.jcarbad.sfgpetclinic.model.Owner;
 import com.jcarbad.sfgpetclinic.services.OwnerService;
+import com.jcarbad.sfgpetclinic.services.PetService;
+import com.jcarbad.sfgpetclinic.services.PetTypeService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +12,14 @@ import java.util.Set;
 @Service
 @Profile({"default", "map"})
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+
+    private final PetTypeService petTypeService;
+    private final PetService petService;
+
+    public OwnerServiceMap(PetTypeService petTypeService, PetService petService) {
+        this.petTypeService = petTypeService;
+        this.petService = petService;
+    }
 
     @Override
     public Set<Owner> findAll() {
@@ -38,6 +48,9 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 
     @Override
     public Owner findByLastName(String lastName) {
-        return null;
+        return super.findAll().stream()
+                .filter(owner -> owner.getLastName().equalsIgnoreCase(lastName))
+                .findFirst()
+                .orElse(null);
     }
 }
