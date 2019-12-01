@@ -3,6 +3,7 @@ package com.jcarbad.sfgpetclinic.controllers;
 import com.jcarbad.sfgpetclinic.services.OwnerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -21,5 +22,10 @@ public class OwnerController {
         model.addAttribute("owners", ownerService.findAll());
 
         return "owners/index";
+    }
+
+    @GetMapping("/find")
+    public String findOwners() {
+        return "notimplemented";
     }
 }
