@@ -75,7 +75,14 @@ public class DataLoader implements CommandLineRunner {
                 .petType(savedCatPetType)
                 .build();
 
+        System.out.println("Loading Pets...");
+        petService.save(coqui);
+        petService.save(kiara);
+        System.out.println("Done.");
+
         o2.getPets().add(kiara);
+        ownerService.save(o1);
+        ownerService.save(o2);
 
         Vet v1 = Vet.builder()
                 .firstName("L'Amiga")
@@ -94,12 +101,14 @@ public class DataLoader implements CommandLineRunner {
                 .date(LocalDate.now())
                 .description("La visita de Coqui")
                 .build();
+        visitService.save(coquisVisit);
 
         Visit kiarasVisit = Visit.builder()
                 .pet(kiara)
                 .date(LocalDate.now())
                 .description("La visita de Kiara")
                 .build();
+        visitService.save(kiarasVisit);
 
 
         System.out.println("Loading vets...");
