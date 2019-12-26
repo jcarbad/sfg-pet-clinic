@@ -3,5 +3,6 @@ com/jcarbad/sfgpetclinic/SfgPetClinicApplication.class
 com/jcarbad/sfgpetclinic/controllers/VetController.class
 com/jcarbad/sfgpetclinic/formatters/PetTypeFormatter.class
 com/jcarbad/sfgpetclinic/controllers/IndexController.class
+com/jcarbad/sfgpetclinic/controllers/VisitController.class
 com/jcarbad/sfgpetclinic/controllers/OwnerController.class
 com/jcarbad/sfgpetclinic/boostrap/DataLoader.class
